@@ -1,0 +1,6 @@
+mediapipe
+seaborn
+torch
+ultralytics
+easyocr
+opencv-python
