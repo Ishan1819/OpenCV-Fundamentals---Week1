@@ -1,0 +1,5 @@
+mediapipe
+seaborn
+torch
+ultralytics
+easyocr
