@@ -13,10 +13,8 @@ img = cv2.imread(image_path)
 # Perform detection
 results = model(img)
 
-# Get detection results in pandas format
-detections = results.pandas().xyxy[0]  # xmin, ymin, xmax, ymax, confidence, class, name
+detections = results.pandas().xyxy[0]  
 
-# Loop through each detection and draw bounding boxes + labels
 for i, det in detections.iterrows():
     x1, y1, x2, y2 = int(det['xmin']), int(det['ymin']), int(det['xmax']), int(det['ymax'])
     label = det['name']  # Object name (not hardcoded)
@@ -28,7 +26,6 @@ for i, det in detections.iterrows():
     cv2.putText(img, f"{label}", (x1, y1 - 10),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.6, (210, 0, 255), 2)
 
-# Save the result in same folder
 output_path = "detected_output.jpg"
 cv2.imwrite(output_path, img)
 

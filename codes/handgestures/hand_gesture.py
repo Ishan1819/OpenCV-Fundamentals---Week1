@@ -1,11 +1,9 @@
 import cv2
 import mediapipe as mp
 
-# Initialize MediaPipe Hands
 mp_hands = mp.solutions.hands
 mp_draw = mp.solutions.drawing_utils
 
-# Hands detection
 hands = mp_hands.Hands(
     max_num_hands=2,
     min_detection_confidence=0.7,
@@ -14,7 +12,7 @@ hands = mp_hands.Hands(
 
 # Function to recognize gestures
 def recognize_gesture(landmarks):
-    # Example: landmarks[4] = thumb tip, landmarks[8] = index tip
+    # landmarks[4] = thumb tip, landmarks[8] = index tip
     thumb_tip = landmarks[4].y
     index_tip = landmarks[8].y
     middle_tip = landmarks[12].y
@@ -32,7 +30,7 @@ def recognize_gesture(landmarks):
     else:
         return "Unknown"
 
-# Webcam feed
+# real time camera on
 cap = cv2.VideoCapture(0)
 
 while cap.isOpened():
@@ -40,14 +38,11 @@ while cap.isOpened():
     if not ret:
         break
 
-    # Flip the image for convenience
     frame = cv2.flip(frame, 1)
     h, w, c = frame.shape
 
-    # Convert to RGB
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-    # Process frame
     result = hands.process(rgb_frame)
 
     if result.multi_hand_landmarks:
@@ -62,7 +57,7 @@ while cap.isOpened():
 
     cv2.imshow("Hand Gesture Recognition", frame)
 
-    if cv2.waitKey(1) & 0xFF == 27:  # ESC to exit
+    if cv2.waitKey(1) & 0xFF == 27: 
         break
 
 cap.release()
