@@ -42,7 +42,7 @@ Topics Covered (short notes)
 
 11) Theory (pixels, color, convolution, edges, Fourier)
 
-Research (Misc)
+**Research (Misc)**
 
 Image Processing Concepts – quick take
 
@@ -84,7 +84,7 @@ waitKey() is important to keep window responsive.
 
 If GUI is missing, save images to file or use Matplotlib to display.
 
-📘 References
+**References**
 
 OpenCV Docs (4.x): https://docs.opencv.org/4.x/d9/df8/tutorial_root.html
 
@@ -94,7 +94,7 @@ Extra reads: pjreddie GitHub exercises (for practice ideas), ChatGPT references.
 
 Report (PDF)
 
-File: report.pdf in repo root.
+File: OpenCV Fundamentals - Week1 (1).pdf in repo root.
 
 It includes:
 
@@ -102,29 +102,11 @@ sources per topic,
 
 key learnings + insights,
 
-screenshots,
-
-small notes on issues faced (e.g., cv2.imshow GUI on Windows),
-
 summary of code work and results.
 
 (You can export your .docx notes to PDF, or combine them into one PDF as per manager.)
 
-✅ Deliverables Checklist
-
- 11 topics covered (notes per topic)
-
- Codes added under exercises/ (clean, commented)
-
- requirements.txt present
-
- Screenshots of results added
-
- README.md (this file)
-
- report.pdf (comprehensive report)
-
-🗒️ Notes / Common Issues
+**Notes**
 
 If cv2.imshow fails on some Windows setups, save output to file or use Matplotlib to show.
 
