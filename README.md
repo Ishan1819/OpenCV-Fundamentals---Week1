@@ -9,16 +9,16 @@ python -m venv .venv
 source .venv/bin/activate
 
 
-Install deps:
+# Install deps:
 
 pip install -r requirements.txt
 
-Run the code by:
+# Run the code by:
 
 cd <go inside the directory whose code to be run>
 python <filename.py>
 
-Topics Covered (short notes)
+# Topics Covered (short notes)
 
 1) Introduction to OpenCV
 
@@ -42,7 +42,7 @@ Topics Covered (short notes)
 
 11) Theory (pixels, color, convolution, edges, Fourier)
 
-**Research (Misc)**
+# Research (Misc)
 
 Image Processing Concepts – quick take
 
@@ -84,7 +84,7 @@ waitKey() is important to keep window responsive.
 
 If GUI is missing, save images to file or use Matplotlib to display.
 
-**References**
+# References
 
 OpenCV Docs (4.x): https://docs.opencv.org/4.x/d9/df8/tutorial_root.html
 
@@ -92,7 +92,7 @@ YouTube playlist (study): https://www.youtube.com/playlist?list=PLjMXczUzEYcHvw5
 
 Extra reads: pjreddie GitHub exercises (for practice ideas), ChatGPT references.
 
-Report (PDF)
+# Report (PDF)
 
 File: OpenCV Fundamentals - Week1 (1).pdf in repo root.
 
@@ -106,7 +106,7 @@ summary of code work and results.
 
 (You can export your .docx notes to PDF, or combine them into one PDF as per manager.)
 
-**Notes**
+# Notes
 
 If cv2.imshow fails on some Windows setups, save output to file or use Matplotlib to show.
 
