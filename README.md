@@ -1,5 +1,7 @@
 # Setup
 
+git clone https://github.com/Ishan1819/OpenCV-Fundamentals---Week1.git
+
 Create venv (optional):
 
 python -m venv .venv
